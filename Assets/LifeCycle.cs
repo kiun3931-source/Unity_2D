@@ -2,21 +2,22 @@ using UnityEngine;
 
 public class LifeCylce : MonoBehaviour
 {
-    private void Start()
+    /*private void Start()
     {
-        Vector3 vec = new Vector3(5, 0, 0); // 벡터 값
+        Vector3 vec = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0); // 벡터 값
         transform.Translate(vec);   // 벡터 값을 현재 위치에 더하는 함수
-    }
+    }*/
 
 
-    /*void Update() // 게임 로직 업데이트, 환경에 따라 실행 주기가 달라진다
+    void Update() // 게임 로직 업데이트, 환경에 따라 실행 주기가 달라진다
     {
-        Vector3 vec = new Vector3(5, 0, 0); // 벡터 값
+        // 업데이트에서 실행시 계속 실행 
+        Vector3 vec = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0); // 벡터 값
         transform.Translate(vec);   // 벡터 값을 현재 위치에 더하는 함수
 
         
 
-        if (Input.anyKeyDown)
+        /*if (Input.anyKeyDown)
             Debug.Log("플레이어가 아무 키를 눌렀습니다.");
 
         //Down, Stay , UP 
@@ -50,11 +51,11 @@ public class LifeCylce : MonoBehaviour
         {
             Debug.Log("횡 이동 중..." + Input.GetAxis("Horizontal"));// 수평, 수직 버튼을 입력 받으면 Float
         }                    // GetAxis -> 가중치를 가짐 (꾹 눌러야 상승)
-         // GetAxisRaw() : 무조건 -1, 1을 반환 동시에 누르면 0 
+         // GetAxisRaw() : 무조건 -1, 1을 반환 동시에 누르면 0 */
 
 
 
-}*/
+}
 
-  
+
 }
